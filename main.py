@@ -6,6 +6,7 @@ import Functions.cls as cls
 import Functions.startup as startup
 import Functions.dateandtime as dateandtime
 import Functions.echo as echo
+import Functions.title as title
 
 # Create File and Folder Structure
 root = Folder("root")
@@ -31,6 +32,7 @@ file9 = maths.newFile("primary-numbers.txt")
 cls.cls()
 
 # Start DOS Emulator!
+title.termtitle("PyDOS BETA 1.0")
 currentFolder = root
 startup.intro()
 # currentFolder.dir()
@@ -85,6 +87,8 @@ while True:
         dateandtime.time()
     elif instruction[0].upper() == "ECHO":
         echo.echo(list1 = instruction, list2 = instruction[0])
+    elif instruction[0].upper() == "TITLE":
+        title.chngtitle(instruction, instruction[0])
 
     else:
         print("Bad command or file name")
