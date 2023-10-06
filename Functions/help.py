@@ -10,6 +10,7 @@ def helpscrn():
     print("RENAME <name> <newname> - To rename a subfolder or a file.")
     print("DEL <name> - To delete a subfolder or a file.")
     print("ECHO <message> - Displays a message.")
+    print("TITLE <string> - Changes the PyDOS prompt window title")
     print("TIME - Shows the current time.")
     print("DATE - Shows the current date.")
     print("REBOOT - Reboots PyDOS.")
